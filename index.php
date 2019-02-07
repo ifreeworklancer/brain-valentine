@@ -28,7 +28,7 @@ require_once('header.php');
         </div>
         <a href="/" class="logo"></a>
         <a href="<?= $main_site_link; ?>" class="main-site-link">brainacad.zp.ua</a>
-        <ul class="wrapper-circle">
+        <ul class="wrapper wrapper--circle">
             <li class="circle circle-normal"></li>
             <li class="circle circle-little"></li>
             <li class="circle circle-big"></li>
@@ -43,11 +43,24 @@ require_once('header.php');
             <li class="circle circle-little"></li>
             <li class="circle circle-big"></li>
             <li class="circle circle-normal"></li>
-            <li class="circle circle-big"></li>
+            <li class="circle circle-little"></li>
             <li class="circle circle-little"></li>
             <li class="circle circle-little"></li>
             <li class="circle circle-normal"></li>
             <li class="circle circle-little"></li>
+            <li class="circle circle-little"></li>
+            <li class="circle circle-little"></li>
+        </ul>
+        <ul class="wrapper wrapper--heart">
+            <li class="heart heart--short" style="background-image: url('images/decor/short-heart.png')"></li>
+            <li class="heart heart--middle" style="background-image: url('images/decor/middle-heart.png')"></li>
+            <li class="heart heart--long" style="background-image: url('images/decor/long-heart.png')"></li>
+        </ul>
+        <ul class="wrapper wrapper--balloon">
+            <li class="balloon balloon-1"></li>
+            <li class="balloon balloon-2"></li>
+            <li class="balloon balloon-3"></li>
+            <li class="balloon balloon-4"></li>
         </ul>
     </section>
 
