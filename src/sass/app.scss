@@ -1,0 +1,16 @@
+@import "config/variables";
+@import "config/placeholders";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "base/body";
+@import "base/btn";
+@import "base/layout";
+
+@import "modules/menu";
+@import "modules/forms";
+@import "modules/modal";
+
+@import "layout/intro";
+
+@import "layout/thanks";

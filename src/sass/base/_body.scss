@@ -1,0 +1,55 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+
+  @media (max-width: map_get($grid-breakpoints, sm)) {
+    font-size: 1rem;
+  }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+
+h1 {
+
+  @media (max-width: map_get($grid-breakpoints, sm)) {
+    font-size: 2.25rem;
+  }
+}
+
+h2 {
+
+  @media (max-width: map_get($grid-breakpoints, sm)) {
+    font-size: 1.5rem;
+  }
+}
+
+h3 {
+
+  @media (max-width: map_get($grid-breakpoints, sm)) {
+    font-size: 1.25rem;
+  }
+}
+
+a {
+  transition: 0.35s;
+}
+
+ul {
+  margin: 0;
+  @extend .list-unstyled;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  border-radius: 0;
+  border: none;
+  background: transparent;
+}

@@ -1,0 +1,106 @@
+.custom-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 30px 20px;
+  transform: translate(-50%, 200%);
+  width: 98%;
+  max-width: 630px;
+  background: #fff;
+  border-radius: 3px;
+  z-index: 800;
+  transition: .5s;
+  max-height: 100%;
+  overflow-y: auto;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    width: 100%;
+    padding: 60px 50px;
+  }
+
+  &.active {
+    transform: translate(-50%, -50%);
+  }
+
+
+  .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 50;
+
+    &:hover {
+
+      .line {
+        opacity: 1;
+      }
+    }
+
+    .line {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 2px;
+      background: $dark;
+      opacity: .5;
+      transition: .5s;
+
+      &--left {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+
+      &--right {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    }
+  }
+
+  &-header {
+
+    &__title {
+      position: relative;
+      color: $dark;
+      max-width: 440px;
+      margin-bottom: 30px;
+      font-size: 15px;
+
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        font-size: $h6-font-size;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        right: -50px;
+        bottom: .7rem;
+        width: 40px;
+        height: 2px;
+        background: $secondary;
+        display: none;
+
+        @media (min-width: map_get($grid-breakpoints, sm)) {
+          display: block;
+        }
+      }
+    }
+  }
+
+}
+
+
+.modal-mask {
+  @extend %pos;
+  position: fixed;
+  bottom: 100%;
+  background: rgba(#000, .8);
+  z-index: 799;
+  transition: .5s;
+
+  &.active {
+    bottom: 0;
+  }
+}

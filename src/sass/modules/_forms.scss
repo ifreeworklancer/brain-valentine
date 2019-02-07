@@ -1,0 +1,96 @@
+.form-group {
+    position: relative;
+
+    &.in-focus {
+
+        .label-placeholder {
+            left: 0;
+            bottom: 90%;
+            font-size: 13px;
+        }
+
+        .form-control {
+            background: #fff;
+        }
+
+        &::before {
+            background: $primary;
+            width: 100%;
+        }
+    }
+
+    .label-placeholder {
+        position: absolute;
+        left: 15px;
+        bottom: 2px;
+        color: #919191;
+        cursor: pointer;
+        z-index: 5;
+        transition: .5s;
+    }
+
+    .form-control {
+        padding: 10px 15px;
+        background: #f6f6f6;
+        border-radius: 0;
+        border: 1px solid $light;
+        color: $secondary;
+        transition: .5s;
+    }
+
+    &--btn {
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &::before {
+        content: '';
+        @extend %pos;
+        top: auto;
+        width: 15px;
+        height: 2px;
+        background: $light;
+        transition: .5s;
+    }
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form-group {
+        width: 100%;
+        margin: 0 auto 30px;
+
+        @media (min-width: map_get($grid-breakpoints, md)) {
+            width: 30%;
+            margin: 0;
+        }
+    }
+
+
+}
+
+.form-column {
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    &--min {
+        max-width: 315px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,106 @@
+.burger-menu {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+
+        .line {
+
+            &--small {
+                width: 15px;
+            }
+
+            &--big {
+                width: 15px;
+            }
+        }
+    }
+
+    &.active {
+
+        .line {
+            position: absolute;
+
+            &--top {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+
+            &--small {
+                transform: translateX(30px);
+            }
+
+            &--big {
+                transform: translateX(-30px);
+            }
+
+            &--bottom {
+                top: 50%;
+                left: 50%;
+                width: 30px;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+        }
+    }
+
+    .line {
+        height: 2px;
+        background: #fff;
+        margin-bottom: 2px;
+        transition: .5s;
+
+        &--top {
+            width: 100%;
+        }
+
+        &--middle {
+            width: 100%;
+            background: transparent;
+        }
+
+        &--small {
+            width: 8px;
+        }
+
+        &--big {
+            width: 19px;
+        }
+
+        &--bottom {
+            width: 18px;
+        }
+    }
+}
+
+
+.menu {
+    @extend %pos;
+    background-image: linear-gradient( 135deg, rgb(91,119,216) 0%, rgb(93,206,206) 100%);
+    z-index: 499;
+    display: none;
+
+    &-content {
+        @extend %pos;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        
+        li {
+            margin-bottom: 20px;
+            
+            a {
+                font-size: 20px;
+                color: #fff;
+                font-family: $headings-font-family;
+                font-weight: bold;
+            }
+        }
+    }
+}

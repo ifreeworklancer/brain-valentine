@@ -1,0 +1,30 @@
+$light: #e1e1e1;
+$primary: #FFBAB3;
+$dark: #333;
+$secondary: #848794;
+
+$body-color: #fff;
+
+$font-size-base: 1rem;
+$font-family-base: 'Exo 2',
+sans-serif;
+$headings-font-family: 'Exo 2',
+sans-serif;
+$headings-font-weight: 900;
+
+$link-hover-decoration: none;
+$input-btn-focus-width: 0;
+$input-btn-focus-color: rgba(#fff, 0);
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color;
+
+$border-width: 0;
+
+$border-radius: 7px;
+$btn-padding-x: 35px;
+$btn-padding-y: 20px;
+
+$h1-font-size: $font-size-base * 4;
+$h2-font-size: $font-size-base * 2.25;
+$h3-font-size: $font-size-base * 1.875;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.125;

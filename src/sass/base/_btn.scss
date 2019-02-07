@@ -1,0 +1,17 @@
+.btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 18px;
+    transition: .5s;
+    z-index: 5;
+    color: #fff;
+    
+    &:hover {
+        color: #fff;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    }
+}
