@@ -1,0 +1,10 @@
+#page-thanks {
+    padding: 120px 0;
+    background: radial-gradient(678.64px at 50% 50%, #9A9DA6 0%, #6C6E79 100%);
+    z-index: 3;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+        height: 100vh;
+        padding: 0;
+    }
+}
