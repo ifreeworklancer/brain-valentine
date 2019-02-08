@@ -54,149 +54,144 @@
 
     .circle {
         position: absolute;
+        transform: translate(-50%, -50%);
+        transform-origin: 0 0;
         background: #fff;
         border-radius: 50%;
         animation: zoom 2.5s linear forwards infinite;
 
         &-little {
-            width: 3px;
-            height: 3px;
+            transform: scale(.25);
         }
 
         &-normal {
-            width: 8px;
-            height: 8px;
-        }
-
-        &-big {
-            width: 20px;
-            height: 20px;
+            transform: scale(.5);
         }
 
         &:nth-child(1) {
             top: 4%;
             left: 15%;
-            animation-delay: .3s;
+            animation-duration: 3s;
         }
 
         &:nth-child(2) {
             top: 20%;
             left: 8%;
-            animation-delay: .2s;
+            animation-duration: 1.5s;
         }
 
         &:nth-child(3) {
             top: 25%;
             left: 18%;
-            animation-delay: .3s;
+            animation-duration: 2s;
         }
 
         &:nth-child(4) {
             top: 66%;
             left: 6%;
-            animation-delay: .4s;
+            animation-duration: 4s;
         }
 
         &:nth-child(5) {
             top: 66%;
             left: 20%;
-            animation-delay: .5s;
+            animation-duration: 1s;
         }
 
         &:nth-child(6) {
             top: 64%;
             left: 25%;
-            animation-delay: .3s;
+            animation-duration: 3s;
         }
 
         &:nth-child(7) {
             top: 30%;
             left: 35%;
-            animation-delay: .2s;
+            animation-duration: 2s;
         }
 
         &:nth-child(8) {
             top: 38%;
             left: 30%;
-            animation-delay: .4s;
+            animation-duration: 4s;
         }
 
         &:nth-child(9) {
             top: 12%;
             left: 37%;
-            animation-delay: .6s;
+            animation-duration: 3s;
         }
 
         &:nth-child(10) {
             top: 20%;
             left: 55%;
-            animation-delay: .2s;
+            animation-duration: 1s;
         }
 
         &:nth-child(11) {
             top: 22%;
             left: 53%;
-            animation-delay: .4s;
+            animation-duration: 4s;
         }
 
         &:nth-child(12) {
             top: 5%;
             left: 75%;
-            animation-delay: .6s;
+            animation-duration: 3s;
         }
 
         &:nth-child(13) {
             top: 24%;
             left: 68%;
-            animation-delay: .4s;
+            animation-duration: 2s;
         }
 
         &:nth-child(14) {
             top: 9%;
             left: 70%;
-            animation-delay: .3s;
+            animation-duration: 1s;
         }
 
         &:nth-child(15) {
             top: 34%;
             left: 75%;
-            animation-delay: .3s;
+            animation-duration: 3s;
         }
 
         &:nth-child(16) {
             top: 8%;
             left: 86%;
-            animation-delay: .6s;
+            animation-duration: 4s;
         }
 
         &:nth-child(17) {
             top: 4%;
             left: 95%;
-            animation-delay: .4s;
+            animation-duration: 2s;
         }
 
         &:nth-child(18) {
             top: 46%;
             left: 95%;
-            animation-delay: .2s;
+            animation-duration: 1.5s;
         }
 
         &:nth-child(19) {
             top: 40%;
             left: 93%;
-            animation-delay: .4s;
+            animation-duration: 3s;
         }
 
         &:nth-child(20) {
             top: 54%;
             left: 93%;
-            animation-delay: .6s;
+            animation-duration: 2s;
         }
 
         &:nth-child(21) {
             top: 53%;
             left: 78%;
-            animation-delay: .2s;
+            animation-duration: 3.5s;
         }
 
     }
@@ -207,27 +202,27 @@
         @extend %img;
         background-size: contain;
         transform-origin: 50% 0;
+        animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
 
         &--short {
             left: 7%;
             width: 120px;
             height: 150px;
-            animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
         }
 
         &--middle {
             right: 12%;
             width: 150px;
             bottom: 60%;
-            animation: swing 3.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            animation-duration: 3.52s;
         }
 
         &--long {
             left: 20%;
             width: 180px;
             bottom: 25%;
-            animation: swing 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            animation-duration: 32s;
         }
     }
 
@@ -279,15 +274,18 @@
 
 @keyframes zoom {
     0% {
-        transform: scale(1);
+        width: 0;
+        height: 0;
     }
 
     50% {
-        transform: scale(0);
+        width: 20px;
+        height: 20px;
     }
 
     100% {
-        transform: scale(1);
+        width: 0;
+        height: 0;
     }
 }
 
