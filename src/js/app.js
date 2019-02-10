@@ -102,26 +102,36 @@ window.jQuery = window.$ = jquery;
     //     delay: 400,
     //     distance: '200px',
     // });
-    // ScrollReveal().reveal('.img--about', {
-    //     origin: 'left',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.about-item', {
-    //     origin: 'right',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('.audience-item', {
-    //     origin: 'bottom',
-    //     delay: 400,
-    //     distance: '200px',
-    // });
-    // ScrollReveal().reveal('#feedback', {
-    //     origin: 'bottom',
-    //     delay: 500,
-    //     distance: '400px',
-    // });
+    ScrollReveal().reveal('.cloud-1', {
+        origin: 'left',
+        delay: 1000,
+        duration: 600,
+        distance: '500px',
+    });
+    ScrollReveal().reveal('.cloud-2', {
+        origin: 'left',
+        delay: 1500,
+        duration: 900,
+        distance: '800px',
+    });
+    ScrollReveal().reveal('.cloud-3', {
+        origin: 'right',
+        delay: 1300,
+        duration: 500,
+        distance: '600px',
+    });
+    ScrollReveal().reveal('.cloud-4', {
+        origin: 'left',
+        delay: 1000,
+        duration: 500,
+        distance: '600px',
+    });
+    ScrollReveal().reveal('.cloud-5', {
+        origin: 'right',
+        delay: 1400,
+        duration: 700,
+        distance: '600px',
+    });
 
 
 })(jQuery)

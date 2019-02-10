@@ -30,8 +30,5 @@ if (isset($_POST['user_name']) && isset($_POST['user_email']) && isset($_POST['u
     /** Send email */
     mail($to, $subject, $message, $headers);
 
-    /** Add user to AMOCrm */
-    require_once __DIR__ . '/amocrm.php';
-
-    header('Location: /thanks');
+    header('Location: /page-thanks.php');
 }
