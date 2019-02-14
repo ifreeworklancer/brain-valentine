@@ -5,8 +5,8 @@ if (isset($_POST['user_name']) && isset($_POST['user_email']) && isset($_POST['u
     $email = $_POST['user_email'];
     $phone = $_POST['user_phone'];
 
-    $to = 'cpb.org.ua@gmail.com';
-    $subject = 'Заявка с лендинга Brain';
+    $to = 'info@brainacad.zp.ua';
+    $subject = 'Заявка с день влюбленных';
 
     $message = "
     <html>
@@ -21,7 +21,7 @@ if (isset($_POST['user_name']) && isset($_POST['user_email']) && isset($_POST['u
         </body>
         </html>
     ";
-    $headers = 'From: info@impressionbureau.pro' . "\r\n" .
+    $headers = 'From: info@brainacad.zp.ua' . "\r\n" .
         'Reply-To:' . $email . ' ' .
         'X-Mailer: PHP/' . phpversion();
     $headers = 'MIME-Version: 1.0' . "\r\n";

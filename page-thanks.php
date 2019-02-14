@@ -13,10 +13,10 @@ require_once('header.php');
             <div class="col-12 d-flex justify-content-center align-items-center">
                 <div class="page-thanks-item text-center">
                     <h1 class="page-thanks-item__title">
-                        Спасибо!
+                        Вы участвуете в розыгрыше
                     </h1>
                     <h2 class="page-thanks-item__subtitle mb-4">
-                        Наш менеджер свяжется с Вами
+                        С любовью, команда Brain Academy
                     </h2>
                     <a href="/" class="btn btn-primary">
                         На главную

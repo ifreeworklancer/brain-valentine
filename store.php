@@ -1,8 +1,12 @@
 <?php
 $app_title = 'Brain Valentine';
 $main_site_link = 'https://brainacad.zp.ua/';
+$facebook_link = 'https://www.facebook.com/zp.brainacad';
+$instagram_link = 'https://www.instagram.com/brainacad';
 
 $intro = [
-    'title' => 'Академия Brain',
-    'subtitle' => 'поздравляет своих выпускников с Днём Св.Валентина! И проводит розыгрыш билетов в кино.'
+    'title' => 'Brain Academy',
+    'subtitle' => 'поздравляет своих выпускников и учащихся с Днём Св.Валентина! И проводит розыгрыш 5 пар сертификатов в MULTIPLEX.'
 ];
+
+  

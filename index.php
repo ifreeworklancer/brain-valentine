@@ -29,17 +29,17 @@ require_once('header.php');
         <a href="/" class="logo"></a>
         <ul class="links-list">
             <li>
-                <a href="<?= $main_site_link; ?>">brainacad.zp.ua</a>
+                <a href="<?= $main_site_link; ?>" target="_blank">brainacad.zp.ua</a>
             </li>
             <li>
-                <a href="#">
+                <a href="<?= $facebook_link; ?>" target="_blank">
                     <svg width="20" height="20">
                         <use xlink:href="#facebook-icon"></use>
                     </svg>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="<?= $instagram_link; ?>" target="_blank">
                     <svg width="20" height="20">
                         <use xlink:href="#instagram-icon"></use>
                     </svg>
